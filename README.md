@@ -54,3 +54,5 @@ docker-compose up
 
 8. After build, you will finde the `opencv.js` in the `opencv/build/bin/opencv.js`
 
+## Other questions
+1. In China, maybe you will meet with the problem of `data: Download: face_landmark_model.dat`, you can resolve it with [this link](https://blog.csdn.net/u013362433/article/details/80203841)

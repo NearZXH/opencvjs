@@ -1,0 +1,13 @@
+version: '2.3'
+
+services:
+    emscripten:
+        image: trzeci/emscripten:latest
+        volumes:
+            - ${PWD}/opencv:/code/opencv
+            - ${PWD}/opencv_contrib:/code/opencv_contrib
+        working_dir:
+            /code/opencv
+        stdin_open: true
+        tty: true
+        command: python ./platforms/js/build_js.py build
